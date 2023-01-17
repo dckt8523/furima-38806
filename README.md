@@ -1,6 +1,6 @@
 # テーブル設計
 
-## Users テーブル
+## users テーブル
 
 | Column             | Type    | Options                   |
 | ------------------ | ------- | ------------------------- |
@@ -18,7 +18,7 @@
 - has_many :items
 - has_many :orders
 
-## Items テーブル
+## items テーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
@@ -37,7 +37,7 @@
 - belongs_to :user
 - has_one :order
 
-## Orders テーブル
+## orders テーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
@@ -50,7 +50,7 @@
 - belongs_to :item
 - has_one :address
 
-## Addresses テーブル
+## addresses テーブル
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
