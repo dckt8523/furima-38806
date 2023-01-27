@@ -3,7 +3,6 @@ class OrderDestination
   attr_accessor :postal_code, :prefecture_id, :municipality, :address, :building, :phone_number, :user_id, :item_id, :token
 
   with_options presence: true do
-    validates :phone_number, numericality: {only_integer: true, message: 'is invalid. Input only number'}
     validates :municipality, :address, :user_id, :item_id, :token
     validates :postal_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)"}
   end
